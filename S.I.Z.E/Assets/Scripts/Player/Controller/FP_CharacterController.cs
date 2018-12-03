@@ -132,11 +132,16 @@ public class FP_CharacterController : MonoBehaviour
         {
             if (hit.transform.gameObject.tag == "Interactible")
             {
-                r_uiHandler.infoText.text = "Press E to interact";
+				Inteactablegameobj inter = hit.transform.gameObject.GetComponent(typeof(Inteactablegameobj)) as Inteactablegameobj;
+
+				r_uiHandler.infoText.text = inter.OnViewPoint();
 
                 if (Input.GetKey(KeyCode.E))
                 {
-                    hit.transform.gameObject.SetActive(false);
+
+					if (inter != null)
+						Destroy(inter.gameObject);
+					
                 }
             }
             else
