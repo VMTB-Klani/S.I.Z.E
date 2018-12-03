@@ -22,9 +22,6 @@ public class FP_Camera : MonoBehaviour
     float pitch = 0.022f; ///The Pitch of the Camera.
     Vector2 pitchMinMax = new Vector2(-90, 90); ///clamp camera x and y
 
-    ///pickup range, for raycast
-    int pickupRange = 5;
-
     void Start()
     {
         characterGO = transform.parent.gameObject;
@@ -38,14 +35,6 @@ public class FP_Camera : MonoBehaviour
         if (Cursor.lockState == CursorLockMode.Locked)
         {
             RotateCamera();
-        }
-    }
-
-    private void FixedUpdate()
-    {
-        if (Input.GetKey(KeyCode.Mouse0))
-        {
-            DoRaycast();
         }
     }
 
@@ -75,21 +64,6 @@ public class FP_Camera : MonoBehaviour
             ///Rotate Camera X
             ///characterGJ.transform.localRotation = Quaternion.AngleAxis(yaw, characterGJ.transform.up);
             characterGO.transform.localEulerAngles = new Vector3(0.0f, yaw, 0.0f);
-        }
-    }
-
-    /// <summary>
-    /// emmit a ray, for picking up objects
-    /// </summary>
-    void DoRaycast()
-    {
-        RaycastHit hit;
-        if (Physics.Raycast(transform.position, transform.forward, out hit, pickupRange))
-        {
-            if (hit.transform.gameObject.tag == "destroyable")
-            {
-                Destroy(hit.transform.gameObject);
-            }
         }
     }
 }

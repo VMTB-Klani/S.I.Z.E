@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class FP_CharacterController : MonoBehaviour
 {
@@ -15,18 +16,54 @@ public class FP_CharacterController : MonoBehaviour
 
     Vector3 moveDirection = Vector3.zero;
 
+    ///raycast hit for interacting with objects
+    RaycastHit hit;
+    ///pickup range, for raycast
+    int pickupRange = 5;
+
     ///references
     AudioHandler r_audioHandler;
     CharacterController r_characterController;
+    FP_Camera r_fpCamera;
+    UIHandler r_uiHandler;
+
     [SerializeField] AudioSource r_footstepSource;
 
     private void Awake()
     {
         r_audioHandler = FindObjectOfType<AudioHandler>();
         r_characterController = GetComponent<CharacterController>();
+        r_fpCamera = GetComponentInChildren<FP_Camera>();
+        r_uiHandler = FindObjectOfType<UIHandler>();
     }
 
     void Update()
+    {
+        DoMovement();
+        InteractWithObjects();
+    }
+
+    /// <summary>
+    /// play random footstep sounds for the player
+    /// only when on the ground and when moving fast enough
+    /// 
+    /// sound volume and pitch is based on sprinting/crouching and normal moving
+    /// to give a more ->immersive<- feeling (battlefield 5 LUL)
+    /// </summary>
+    /// <returns></returns>
+    IEnumerator PlayFootstepSound()
+    {
+        if (r_characterController.velocity.magnitude >= 2f && !r_footstepSource.isPlaying)
+        {
+            AudioClip clip = r_audioHandler.GetRandomAudioClip();
+            r_footstepSource.PlayOneShot(clip);
+            r_footstepSource.volume = Random.Range(0.25f, 0.3f);
+            r_footstepSource.pitch = Random.Range(0.85f, 1f);
+            yield return new WaitForSeconds(0.1f);
+        }
+    }
+
+    void DoMovement()
     {
         if (r_characterController.isGrounded)
         {
@@ -89,23 +126,23 @@ public class FP_CharacterController : MonoBehaviour
         r_characterController.Move(moveDirection * Time.deltaTime);
     }
 
-    /// <summary>
-    /// play random footstep sounds for the player
-    /// only when on the ground and when moving fast enough
-    /// 
-    /// sound volume and pitch is based on sprinting/crouching and normal moving
-    /// to give a more ->immersive<- feeling (battlefield 5 LUL)
-    /// </summary>
-    /// <returns></returns>
-    IEnumerator PlayFootstepSound()
+    void InteractWithObjects()
     {
-        if (r_characterController.velocity.magnitude >= 2f && !r_footstepSource.isPlaying)
+        if (Physics.Raycast(r_fpCamera.gameObject.transform.position, r_fpCamera.gameObject.transform.forward, out hit, pickupRange))
         {
-            AudioClip clip = r_audioHandler.GetRandomAudioClip();
-            r_footstepSource.PlayOneShot(clip);
-            r_footstepSource.volume = Random.Range(0.25f, 0.3f);
-            r_footstepSource.pitch = Random.Range(0.85f, 1f);
-            yield return new WaitForSeconds(0.1f);
+            if (hit.transform.gameObject.tag == "Interactible")
+            {
+                r_uiHandler.infoText.text = "Press E to interact";
+
+                if (Input.GetKey(KeyCode.E))
+                {
+                    hit.transform.gameObject.SetActive(false);
+                }
+            }
+            else
+            {
+                r_uiHandler.infoText.text = "";
+            }
         }
     }
 }
