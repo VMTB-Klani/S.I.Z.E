@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class LevelExit : MonoBehaviour {
-
-    void OnTriggerEnter(Collider col)
+public class LevelExit : MonoBehaviour
+{
+    void OnTriggerEnter(Collider _other)
     {
         Debug.Log("Collision has been detected...");
-        if(col.gameObject.tag == "Player")
+        if (_other.gameObject.tag == "Player")
         {
             Debug.Log("Collided with player, loading next scene.");
             LoadNextScene();
