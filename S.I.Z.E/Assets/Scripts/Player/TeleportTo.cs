@@ -4,21 +4,14 @@ using UnityEngine;
 
 public class TeleportTo : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+	[SerializeField]
+	Vector3 Teleportcord;
 
 	public void OnTriggerEnter(Collider _other)
 	{
-		if(_other.gameObject.tag == "player")
+		if(_other.gameObject.tag == "Player")
 		{
-			_other.gameObject.transform.position += new Vector3(0, 10, 0); 
+			_other.gameObject.transform.position += Teleportcord; 
 		}
 	}
 }
