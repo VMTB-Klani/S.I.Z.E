@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Key : InteractibleGameObj
 {
-    public override void OnSelcetedObj()
+    public override void OnSelectedObject()
     {
         Destroy(this.gameObject);
     }

@@ -141,13 +141,17 @@ public class FP_CharacterController : MonoBehaviour
                 if (Input.GetKey(KeyCode.E))
                 {
                     if (inter != null)
-                        inter.OnSelcetedObj();
+                        inter.OnSelectedObject();
                 }
             }
             else
             {
                 r_uiHandler.infoText.text = "";
             }
+        }
+        else
+        {
+            r_uiHandler.infoText.text = "";
         }
     }
 }

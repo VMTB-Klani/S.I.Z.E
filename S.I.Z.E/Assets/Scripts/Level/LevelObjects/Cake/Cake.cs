@@ -30,7 +30,7 @@ public class Cake : InteractibleGameObj
         r_SizeChanger.SmallSize();
     }
 
-    public override void OnSelcetedObj()
+    public override void OnSelectedObject()
     {
         Destroy(this.gameObject);
     }
