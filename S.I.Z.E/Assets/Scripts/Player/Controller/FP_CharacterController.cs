@@ -5,6 +5,9 @@ using UnityEngine.UI;
 
 public class FP_CharacterController : MonoBehaviour
 {
+    //public//
+    [HideInInspector] public CharacterController r_characterController;
+
     //private//
     float speed = 5.1f;
     float midAirMultiplier = 0.9f;
@@ -23,7 +26,6 @@ public class FP_CharacterController : MonoBehaviour
 
     ///references
     AudioHandler r_audioHandler;
-    CharacterController r_characterController;
     FP_Camera r_fpCamera;
     UIHandler r_uiHandler;
 
@@ -132,16 +134,16 @@ public class FP_CharacterController : MonoBehaviour
         {
             if (hit.transform.gameObject.tag == "Interactible")
             {
-				Interactablegameobj inter = hit.transform.gameObject.GetComponent(typeof(Interactablegameobj)) as Interactablegameobj;
+                Interactablegameobj inter = hit.transform.gameObject.GetComponent(typeof(Interactablegameobj)) as Interactablegameobj;
 
-				r_uiHandler.infoText.text = inter.OnViewPoint();
+                r_uiHandler.infoText.text = inter.OnViewPoint();
 
                 if (Input.GetKey(KeyCode.E))
                 {
 
-					if (inter != null)
-						inter.OnSelcetedObj();
-					
+                    if (inter != null)
+                        inter.OnSelcetedObj();
+
                 }
             }
             else
