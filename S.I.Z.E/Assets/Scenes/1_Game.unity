@@ -936,7 +936,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7889f30c1acadfd448f5d9efc550afb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Describtion: 
+  m_Describtion: press E to collect
 --- !u!1 &983587031
 GameObject:
   m_ObjectHideFlags: 0

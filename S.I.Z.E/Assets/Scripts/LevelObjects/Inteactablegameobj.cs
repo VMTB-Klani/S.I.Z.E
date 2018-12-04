@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Inteactablegameobj : MonoBehaviour {
+public class Interactablegameobj : MonoBehaviour {
 
 	[SerializeField]
 	string m_Describtion;
