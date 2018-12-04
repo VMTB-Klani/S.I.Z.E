@@ -465,7 +465,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f0aaff35f4568f4cb648600098b484c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Describtion: This is a cake
+  m_Description: Cake
 --- !u!1 &117645332
 GameObject:
   m_ObjectHideFlags: 0
@@ -1094,7 +1094,7 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 10
     m_MaxSize: 40
-    m_Alignment: 0
+    m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -2081,7 +2081,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23bd6a38d52220442b4fec6e5583c57f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Describtion: 
+  m_Description: 
 --- !u!1 &1238121004
 GameObject:
   m_ObjectHideFlags: 0
@@ -2500,7 +2500,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17db0a9d23d138c46bcb01c53c1d0dd7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Describtion: 
+  m_Description: Potion
 --- !u!1 &1619131808
 GameObject:
   m_ObjectHideFlags: 0

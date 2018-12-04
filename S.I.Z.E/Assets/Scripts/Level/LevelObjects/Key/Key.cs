@@ -4,8 +4,16 @@ using UnityEngine;
 
 public class Key : InteractibleGameObj
 {
-    public override void OnSelcetedObj()
+	GameManager gameManager;
+	public void Awake()
+	{
+		gameManager = FindObjectOfType<GameManager>();
+	}
+    public override void OnSelectedObject()
     {
+		gameManager.m_CountKey++;
+		gameManager.starttime = Time.time;
+		gameManager.setNewText = true;
         Destroy(this.gameObject);
     }
 

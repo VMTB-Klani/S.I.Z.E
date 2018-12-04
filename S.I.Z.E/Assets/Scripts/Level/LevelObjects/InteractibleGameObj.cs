@@ -16,7 +16,7 @@ public class InteractibleGameObj : MonoBehaviour
         return m_Description;
     }
 
-    public virtual void OnSelcetedObj()
+    public virtual void OnSelectedObject()
     {
 
     }

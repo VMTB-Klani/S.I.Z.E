@@ -32,7 +32,7 @@ public class Potion : InteractibleGameObj
         r_SizeChanger.NormalSize();
     }
 
-    public override void OnSelcetedObj()
+    public override void OnSelectedObject()
     {
         Destroy(this.gameObject);
     }

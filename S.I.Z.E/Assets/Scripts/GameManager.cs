@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -14,10 +15,15 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     //public//
-    public bool isGamePaused = false;
-    public bool hasGameStarted = false;
+    public bool setNewText = false;
+    public float starttime;
 
     //private//
+    private UIHandler r_uiHandler;
+
+    //variables for timer
+    float timeleft = 5;
+
     //Player r_player;
 
     [SerializeField] GameObject playerPrefab;
@@ -32,8 +38,12 @@ public class GameManager : MonoBehaviour
     //lockstate of the cursor
     bool lockstate = false;
 
+    public int m_CountKey = 0;
+
     private void Awake()
     {
+        r_uiHandler = FindObjectOfType<UIHandler>();
+
         ///if the current scene is the game scene
         ///"start" the game
         currentScene = SceneManager.GetActiveScene();
@@ -53,10 +63,59 @@ public class GameManager : MonoBehaviour
         playerPrefab = Instantiate(playerPrefab, player_Spawnpoint);
     }
 
-void Update()
-{
-    
-}
+    void Update()
+    {
+        if ((starttime + timeleft < Time.time))
+        {
+            r_uiHandler.StoryText.text = "";
+        }
+
+        SwitchInfoText();
+    }
+
+    private void SwitchInfoText()
+    {
+        switch (m_CountKey)
+        {
+            case 0:
+                break;
+            case 1:
+                if (setNewText)
+                {
+                    r_uiHandler.StoryText.text = "This is not the right key";
+                    setNewText = false;
+                }
+                break;
+            case 2:
+                if (setNewText)
+                {
+                    r_uiHandler.StoryText.text = "This key doesn't fit too";
+                    setNewText = false;
+                }
+                break;
+            case 3:
+                if (setNewText)
+                {
+                    r_uiHandler.StoryText.text = "The keys look all the same";
+                    setNewText = false;
+                }
+                break;
+            case 4:
+                if (setNewText)
+                {
+                    r_uiHandler.StoryText.text = "I don't think any key will fit";
+                    setNewText = false;
+                }
+                break;
+            default:
+                if (setNewText)
+                {
+                    r_uiHandler.StoryText.text = "I don't think any key will fit";
+                    setNewText = false;
+                }
+                break;
+        }
+    }
 
     /// <summary>
     /// Lock the cursor and hide it
@@ -77,3 +136,4 @@ void Update()
         }
     }
 }
+
