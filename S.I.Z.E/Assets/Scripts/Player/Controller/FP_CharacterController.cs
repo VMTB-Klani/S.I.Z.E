@@ -144,10 +144,11 @@ public class FP_CharacterController : MonoBehaviour
                         inter.OnSelcetedObj();
                 }
             }
-            else
+            
+        }
+		else
             {
                 r_uiHandler.infoText.text = "";
             }
-        }
     }
 }
