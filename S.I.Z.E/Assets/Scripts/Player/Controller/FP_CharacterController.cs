@@ -132,7 +132,7 @@ public class FP_CharacterController : MonoBehaviour
         {
             if (hit.transform.gameObject.tag == "Interactible")
             {
-				Inteactablegameobj inter = hit.transform.gameObject.GetComponent(typeof(Inteactablegameobj)) as Inteactablegameobj;
+				Interactablegameobj inter = hit.transform.gameObject.GetComponent(typeof(Interactablegameobj)) as Interactablegameobj;
 
 				r_uiHandler.infoText.text = inter.OnViewPoint();
 
@@ -140,7 +140,7 @@ public class FP_CharacterController : MonoBehaviour
                 {
 
 					if (inter != null)
-						Destroy(inter.gameObject);
+						inter.OnSelcetedObj();
 					
                 }
             }
