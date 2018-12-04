@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class SizeChanger : MonoBehaviour
 {
-    FP_CharacterController r_CC;
+    //public//
+    public GameObject cam;
 
-    bool toggle;
+    //private//
+    FP_CharacterController r_CC;
 
     private void Awake()
     {
@@ -20,22 +22,18 @@ public class SizeChanger : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.X))
-        {
-            ChangeSize();
-        }
+
     }
 
-    void ChangeSize()
+    public void SmallSize()
     {
-        toggle = !toggle;
-        if (toggle)
-        {
-            r_CC.r_characterController.height = 0.2f;
-        }
-        else
-        {
-            r_CC.r_characterController.height = 1.8f;
-        }
+        r_CC.r_characterController.height = 0;
+        cam.transform.position -= new Vector3(0, 0.5f, 0);
+    }
+
+    public void NormalSize()
+    {
+        r_CC.r_characterController.height = 1.8f;
+        cam.transform.position += new Vector3(0, 0.5f, 0);
     }
 }

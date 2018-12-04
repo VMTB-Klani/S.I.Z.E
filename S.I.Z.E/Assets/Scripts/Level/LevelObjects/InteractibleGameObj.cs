@@ -2,19 +2,22 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class InteractibleGameObj : MonoBehaviour {
+public class InteractibleGameObj : MonoBehaviour
+{
+    [SerializeField] string m_Description;
 
-	[SerializeField]
-	string m_Describtion;
-	public void start()
-	{
+    public void Start()
+    {
 
-	}
-	public virtual string OnViewPoint()
-	{
-		return m_Describtion;
-	}
-	public virtual void OnSelcetedObj()
-	{
-	}
+    }
+
+    public virtual string OnViewPoint()
+    {
+        return m_Description;
+    }
+
+    public virtual void OnSelcetedObj()
+    {
+
+    }
 }

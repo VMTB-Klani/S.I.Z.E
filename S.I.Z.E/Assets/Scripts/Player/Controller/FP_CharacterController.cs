@@ -134,16 +134,14 @@ public class FP_CharacterController : MonoBehaviour
         {
             if (hit.transform.gameObject.tag == "Interactible")
             {
-                Interactablegameobj inter = hit.transform.gameObject.GetComponent(typeof(Interactablegameobj)) as Interactablegameobj;
+                InteractibleGameObj inter = hit.transform.gameObject.GetComponent(typeof(InteractibleGameObj)) as InteractibleGameObj;
 
                 r_uiHandler.infoText.text = inter.OnViewPoint();
 
                 if (Input.GetKey(KeyCode.E))
                 {
-
                     if (inter != null)
                         inter.OnSelcetedObj();
-
                 }
             }
             else
