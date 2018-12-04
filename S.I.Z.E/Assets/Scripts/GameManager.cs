@@ -14,22 +14,21 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     //public//
-    public bool isGamePaused = false;
-    public bool hasGameStarted = false;
-	public bool setNewText = false;
-	public float starttime;
-	//private//
-	private UIHandler r_uiHandler;
-	
-	//variables for timer
-	float timeleft = 5;
-	
-	//Player r_player;
+    public bool setNewText = false;
+    public float starttime;
 
-	[SerializeField] GameObject playerPrefab;
+    //private//
+    private UIHandler r_uiHandler;
+
+    //variables for timer
+    float timeleft = 5;
+
+    //Player r_player;
+
+    [SerializeField] GameObject playerPrefab;
     [SerializeField] Transform player_Spawnpoint;
 
-	[SerializeField] Camera sceneCamera;
+    [SerializeField] Camera sceneCamera;
 
     Scene currentScene;
 
@@ -38,14 +37,15 @@ public class GameManager : MonoBehaviour
     //lockstate of the cursor
     bool lockstate = false;
 
-	public int m_CountKey = 0;
+    public int m_CountKey = 0;
 
-	private void Awake()
+    private void Awake()
     {
-		r_uiHandler = FindObjectOfType<UIHandler>();
-		///if the current scene is the game scene
-		///"start" the game
-		currentScene = SceneManager.GetActiveScene();
+        r_uiHandler = FindObjectOfType<UIHandler>();
+
+        ///if the current scene is the game scene
+        ///"start" the game
+        currentScene = SceneManager.GetActiveScene();
         if (currentScene.buildIndex == 1)
         {
             hasGameStarted = true;
@@ -64,82 +64,62 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-        ///if game not started, skip rest below
-        if (!hasGameStarted)
+        if ((starttime + timeleft < Time.time))
         {
-            return;
+            r_uiHandler.StoryText.text = "";
         }
-		
-		if ((starttime + timeleft < Time.time))
-		{
-			r_uiHandler.StoryText.text = "";
-		}
-		SwitchInfoText();
-        ///get player stuff
-        //if (r_player == null)
-        //{
-        //    r_player = FindObjectOfType<Player>();
-        //}
 
-        ///if ESC pressed, toggle the cursor lock
-        ///which triggers the pause menu when the player is alive
-        if (Input.GetKeyDown(KeyCode.Escape))
+        SwitchInfoText();
+    }
+
+    private void SwitchInfoText()
+    {
+        switch (m_CountKey)
         {
-            //if (r_player.gameObject.activeInHierarchy)
-            {
-                ShowMenu();
-            }
+            case 0:
+                break;
+            case 1:
+                if (setNewText)
+                {
+                    r_uiHandler.StoryText.text = "This is not the right key";
+                    setNewText = false;
+                }
+                break;
+            case 2:
+                if (setNewText)
+                {
+                    r_uiHandler.StoryText.text = "This key doesn't fit too";
+                    setNewText = false;
+                }
+                break;
+            case 3:
+                if (setNewText)
+                {
+                    r_uiHandler.StoryText.text = "The keys look all the same";
+                    setNewText = false;
+                }
+                break;
+            case 4:
+                if (setNewText)
+                {
+                    r_uiHandler.StoryText.text = "I don't think any key will fit";
+                    setNewText = false;
+                }
+                break;
+            default:
+                if (setNewText)
+                {
+                    r_uiHandler.StoryText.text = "I don't think any key will fit";
+                    setNewText = false;
+                }
+                break;
         }
     }
 
-	private void SwitchInfoText()
-	{
-		switch(m_CountKey)
-		{
-			case 0:
-				break;
-			case 1:
-				if (setNewText)
-				{
-					r_uiHandler.StoryText.text = "This is not the right key";
-					setNewText = false;
-				}
-				break;
-			case 2:
-				if (setNewText)
-				{
-					r_uiHandler.StoryText.text = "This key doesn't fit too";
-					setNewText = false;
-				}
-				break;
-			case 3:
-				if (setNewText)
-				{
-					r_uiHandler.StoryText.text = "The keys look all the same";
-					setNewText = false;
-				}
-				break;
-			case 4:
-				if (setNewText)
-				{
-					r_uiHandler.StoryText.text = "I don't think any key will fit";
-					setNewText = false;
-				}
-				break;
-			default:
-				if (setNewText)
-				{
-					r_uiHandler.StoryText.text = "I don't think any key will fit";
-					setNewText = false;
-				}
-				break;
-		}
-	}
-
-	/// <summary>
-	/// Lock the cursor and hide it
-	/// </summary>
-	public void ToggleCursorLock()
+    /// <summary>
+    /// Lock the cursor and hide it
+    /// </summary>
+    public void ToggleCursorLock()
     {
         lockstate = !lockstate;
 
@@ -153,43 +133,6 @@ public class GameManager : MonoBehaviour
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
         }
-    }
-
-    /// <summary>
-    /// shows and hides the pause menu
-    /// </summary>
-    public void ShowMenu()
-    {
-        isGamePaused = !isGamePaused;
-
-        if (isGamePaused)
-        {
-            PauseGame();
-        }
-        else
-        {
-            ResumeGame();
-        }
-    }
-
-    /// <summary>
-    /// resumes the game
-    /// </summary>
-    void ResumeGame()
-    {
-        isGamePaused = false;
-
-        Time.timeScale = 1;
-    }
-
-    /// <summary>
-    /// pauses the game
-    /// </summary>
-    void PauseGame()
-    {
-        isGamePaused = true;
-
-        Time.timeScale = 0;
     }
 }
 
