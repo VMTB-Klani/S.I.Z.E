@@ -43,14 +43,6 @@ public class GameManager : MonoBehaviour
     private void Awake()
     {
         r_uiHandler = FindObjectOfType<UIHandler>();
-
-        ///if the current scene is the game scene
-        ///"start" the game
-        currentScene = SceneManager.GetActiveScene();
-        if (currentScene.buildIndex == 1)
-        {
-            hasGameStarted = true;
-        }
     }
 
     void Start()
