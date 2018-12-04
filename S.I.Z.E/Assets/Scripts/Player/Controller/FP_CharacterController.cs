@@ -147,11 +147,12 @@ public class FP_CharacterController : MonoBehaviour
             else
             {
                 r_uiHandler.infoText.text = "";
-            }
+            }      
         }
-        else
+		else
         {
-            r_uiHandler.infoText.text = "";
+                r_uiHandler.infoText.text = "";
         }
+    }
     }
 }
