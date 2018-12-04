@@ -7,8 +7,9 @@ public class UIHandler : MonoBehaviour
 {
     //public//
     public Text infoText;
+	public Text StoryText;
 
-    void Start()
+	void Start()
     {
 
     }
