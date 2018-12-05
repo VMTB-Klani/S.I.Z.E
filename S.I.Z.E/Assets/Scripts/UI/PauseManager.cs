@@ -4,11 +4,9 @@ using UnityEngine;
 
 public class PauseManager : MonoBehaviour
 {
-
     bool isGamePaused = false;
 
     public GameObject m_UIPauseMenu;
-
 
     void Update()
     {
@@ -59,5 +57,4 @@ public class PauseManager : MonoBehaviour
             ResumeGame();
         }
     }
-
 }
