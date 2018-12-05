@@ -6,7 +6,7 @@ public class TeleportTo : MonoBehaviour
 {
     [SerializeField] Vector3 Teleportcord;
 
-    public void OnTriggerEnter(Collider _other)
+    public virtual void OnTriggerEnter(Collider _other)
     {
         if (_other.gameObject.tag == "Player")
         {
