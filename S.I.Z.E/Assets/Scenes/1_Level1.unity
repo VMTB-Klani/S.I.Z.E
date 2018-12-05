@@ -5609,6 +5609,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 64613743232937440, guid: cc278d319f3144f40b7fdb3a0715c181,
+        type: 2}
+      propertyPath: m_Convex
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc278d319f3144f40b7fdb3a0715c181, type: 2}
   m_IsPrefabAsset: 0
