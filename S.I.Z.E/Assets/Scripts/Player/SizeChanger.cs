@@ -22,18 +22,27 @@ public class SizeChanger : MonoBehaviour
 
     void Update()
     {
-
+        if (Input.GetKeyDown(KeyCode.X))
+        {
+            SmallSize();
+        }
+        if (Input.GetKeyDown(KeyCode.V))
+        {
+            NormalSize();
+        }
     }
 
     public void SmallSize()
     {
-        r_CC.r_characterController.height = 0;
-        cam.transform.position -= new Vector3(0, 0.5f, 0);
+        //r_CC.r_characterController.height = 0;
+        //cam.transform.position -= new Vector3(0, 0.5f, 0);
+        gameObject.transform.localScale = new Vector3(0.1f, 0.1f, 0.1f);
     }
 
     public void NormalSize()
     {
-        r_CC.r_characterController.height = 1.8f;
-        cam.transform.position += new Vector3(0, 0.5f, 0);
+        //r_CC.r_characterController.height = 1.8f;
+        //cam.transform.position += new Vector3(0, 0.5f, 0);
+        gameObject.transform.localScale = new Vector3(1, 1, 1);
     }
 }

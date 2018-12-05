@@ -1,0 +1,291 @@
+fileFormatVersion: 2
+guid: 114823bac7c52d44bb0eef532350a1ab
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Bed1
+    100002: Bed2
+    100004: //RootNode
+    100006: chain_01
+    100008: chain_01 1
+    100010: chain_010
+    100012: chain_010 1
+    100014: chain_011
+    100016: chain_011 1
+    100018: chain_012
+    100020: chain_012 1
+    100022: chain_013
+    100024: chain_013 1
+    100026: chain_014
+    100028: chain_014 1
+    100030: chain_015
+    100032: chain_015 1
+    100034: chain_016
+    100036: chain_016 1
+    100038: chain_017
+    100040: chain_017 1
+    100042: chain_02
+    100044: chain_02 1
+    100046: chain_03
+    100048: chain_03 1
+    100050: chain_04
+    100052: chain_04 1
+    100054: chain_05
+    100056: chain_05 1
+    100058: chain_06
+    100060: chain_06 1
+    100062: chain_07
+    100064: chain_07 1
+    100066: chain_08
+    100068: chain_08 1
+    100070: chain_09
+    100072: chain_09 1
+    100074: chain_left
+    100076: chain_right
+    100078: Thing_1
+    100080: Thing_2
+    100082: Thing_3
+    100084: Thing_4
+    400000: Bed1
+    400002: Bed2
+    400004: //RootNode
+    400006: chain_01
+    400008: chain_01 1
+    400010: chain_010
+    400012: chain_010 1
+    400014: chain_011
+    400016: chain_011 1
+    400018: chain_012
+    400020: chain_012 1
+    400022: chain_013
+    400024: chain_013 1
+    400026: chain_014
+    400028: chain_014 1
+    400030: chain_015
+    400032: chain_015 1
+    400034: chain_016
+    400036: chain_016 1
+    400038: chain_017
+    400040: chain_017 1
+    400042: chain_02
+    400044: chain_02 1
+    400046: chain_03
+    400048: chain_03 1
+    400050: chain_04
+    400052: chain_04 1
+    400054: chain_05
+    400056: chain_05 1
+    400058: chain_06
+    400060: chain_06 1
+    400062: chain_07
+    400064: chain_07 1
+    400066: chain_08
+    400068: chain_08 1
+    400070: chain_09
+    400072: chain_09 1
+    400074: chain_left
+    400076: chain_right
+    400078: Thing_1
+    400080: Thing_2
+    400082: Thing_3
+    400084: Thing_4
+    2100000: lambert1
+    2300000: Bed2
+    2300002: chain_01
+    2300004: chain_01 1
+    2300006: chain_010
+    2300008: chain_010 1
+    2300010: chain_011
+    2300012: chain_011 1
+    2300014: chain_012
+    2300016: chain_012 1
+    2300018: chain_013
+    2300020: chain_013 1
+    2300022: chain_014
+    2300024: chain_014 1
+    2300026: chain_015
+    2300028: chain_015 1
+    2300030: chain_016
+    2300032: chain_016 1
+    2300034: chain_017
+    2300036: chain_017 1
+    2300038: chain_02
+    2300040: chain_02 1
+    2300042: chain_03
+    2300044: chain_03 1
+    2300046: chain_04
+    2300048: chain_04 1
+    2300050: chain_05
+    2300052: chain_05 1
+    2300054: chain_06
+    2300056: chain_06 1
+    2300058: chain_07
+    2300060: chain_07 1
+    2300062: chain_08
+    2300064: chain_08 1
+    2300066: chain_09
+    2300068: chain_09 1
+    2300070: Thing_1
+    2300072: Thing_2
+    2300074: Thing_3
+    2300076: Thing_4
+    3300000: Bed2
+    3300002: chain_01
+    3300004: chain_01 1
+    3300006: chain_010
+    3300008: chain_010 1
+    3300010: chain_011
+    3300012: chain_011 1
+    3300014: chain_012
+    3300016: chain_012 1
+    3300018: chain_013
+    3300020: chain_013 1
+    3300022: chain_014
+    3300024: chain_014 1
+    3300026: chain_015
+    3300028: chain_015 1
+    3300030: chain_016
+    3300032: chain_016 1
+    3300034: chain_017
+    3300036: chain_017 1
+    3300038: chain_02
+    3300040: chain_02 1
+    3300042: chain_03
+    3300044: chain_03 1
+    3300046: chain_04
+    3300048: chain_04 1
+    3300050: chain_05
+    3300052: chain_05 1
+    3300054: chain_06
+    3300056: chain_06 1
+    3300058: chain_07
+    3300060: chain_07 1
+    3300062: chain_08
+    3300064: chain_08 1
+    3300066: chain_09
+    3300068: chain_09 1
+    3300070: Thing_1
+    3300072: Thing_2
+    3300074: Thing_3
+    3300076: Thing_4
+    4300000: Bed2
+    4300002: Thing_1
+    4300004: Thing_2
+    4300006: Thing_3
+    4300008: Thing_4
+    4300010: chain_01
+    4300012: chain_03
+    4300014: chain_02
+    4300016: chain_04
+    4300018: chain_05
+    4300020: chain_06
+    4300022: chain_07
+    4300024: chain_08
+    4300026: chain_09
+    4300028: chain_010
+    4300030: chain_011
+    4300032: chain_012
+    4300034: chain_013
+    4300036: chain_014
+    4300038: chain_015
+    4300040: chain_016
+    4300042: chain_017
+    4300044: chain_01
+    4300046: chain_03
+    4300048: chain_02
+    4300050: chain_04
+    4300052: chain_05
+    4300054: chain_06
+    4300056: chain_07
+    4300058: chain_08
+    4300060: chain_09
+    4300062: chain_010
+    4300064: chain_011
+    4300066: chain_012
+    4300068: chain_013
+    4300070: chain_014
+    4300072: chain_015
+    4300074: chain_016
+    4300076: chain_017
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

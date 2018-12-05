@@ -12,7 +12,7 @@ public class Key : InteractibleGameObj
     public override void OnSelectedObject()
     {
 		gameManager.m_CountKey++;
-		gameManager.starttime = Time.time;
+		gameManager.startTime = Time.time;
 		gameManager.setNewText = true;
         Destroy(this.gameObject);
     }

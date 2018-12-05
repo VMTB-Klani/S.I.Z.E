@@ -19,8 +19,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4154673529749198}
-  - component: {fileID: 136705200447588814}
-  - component: {fileID: 136292202527054114}
   - component: {fileID: 143039480414748154}
   - component: {fileID: 114721688802207940}
   - component: {fileID: 114141426690083970}
@@ -256,32 +254,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   r_characterController: {fileID: 0}
   r_footstepSource: {fileID: 82580777557043540}
---- !u!136 &136292202527054114
-CapsuleCollider:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1958599209115450}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  m_Radius: 0.35
-  m_Height: 1.8
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!136 &136705200447588814
-CapsuleCollider:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1958599209115450}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.35
-  m_Height: 1.8
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!143 &143039480414748154
 CharacterController:
   m_ObjectHideFlags: 1

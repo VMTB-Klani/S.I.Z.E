@@ -1,0 +1,326 @@
+fileFormatVersion: 2
+guid: 37fca307b55932a46beacc66d87cc9db
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Anchoring_01
+    100002: Anchoring_01 1
+    100004: Anchoring_01 2
+    100006: Anchoring_01 3
+    100008: chain
+    100010: chain 1
+    100012: chain 2
+    100014: chain 3
+    100016: chain_01
+    100018: chain_01 1
+    100020: chain_01 2
+    100022: chain_01 3
+    100024: chain_010
+    100026: chain_010 1
+    100028: chain_011
+    100030: chain_012
+    100032: chain_013
+    100034: chain_02
+    100036: chain_02 1
+    100038: chain_02 2
+    100040: chain_02 3
+    100042: chain_03
+    100044: chain_03 1
+    100046: chain_03 2
+    100048: chain_03 3
+    100050: chain_04
+    100052: chain_04 1
+    100054: chain_04 2
+    100056: chain_04 3
+    100058: chain_05
+    100060: chain_05 1
+    100062: chain_05 2
+    100064: chain_06
+    100066: chain_06 1
+    100068: chain_06 2
+    100070: chain_07
+    100072: chain_07 1
+    100074: chain_07 2
+    100076: chain_08
+    100078: chain_08 1
+    100080: chain_08 2
+    100082: chain_08 3
+    100084: chain_09
+    100086: chain_09 1
+    100088: chains_key_set
+    100090: chains_key_set1
+    100092: chains_key_set2
+    100094: chains_key_set3
+    100096: //RootNode
+    100098: Key1
+    100100: Key1 1
+    100102: Key1 2
+    100104: Key1 3
+    400000: Anchoring_01
+    400002: Anchoring_01 1
+    400004: Anchoring_01 2
+    400006: Anchoring_01 3
+    400008: chain
+    400010: chain 1
+    400012: chain 2
+    400014: chain 3
+    400016: chain_01
+    400018: chain_01 1
+    400020: chain_01 2
+    400022: chain_01 3
+    400024: chain_010
+    400026: chain_010 1
+    400028: chain_011
+    400030: chain_012
+    400032: chain_013
+    400034: chain_02
+    400036: chain_02 1
+    400038: chain_02 2
+    400040: chain_02 3
+    400042: chain_03
+    400044: chain_03 1
+    400046: chain_03 2
+    400048: chain_03 3
+    400050: chain_04
+    400052: chain_04 1
+    400054: chain_04 2
+    400056: chain_04 3
+    400058: chain_05
+    400060: chain_05 1
+    400062: chain_05 2
+    400064: chain_06
+    400066: chain_06 1
+    400068: chain_06 2
+    400070: chain_07
+    400072: chain_07 1
+    400074: chain_07 2
+    400076: chain_08
+    400078: chain_08 1
+    400080: chain_08 2
+    400082: chain_08 3
+    400084: chain_09
+    400086: chain_09 1
+    400088: chains_key_set
+    400090: chains_key_set1
+    400092: chains_key_set2
+    400094: chains_key_set3
+    400096: //RootNode
+    400098: Key1
+    400100: Key1 1
+    400102: Key1 2
+    400104: Key1 3
+    2100000: lambert1
+    2300000: Anchoring_01
+    2300002: Anchoring_01 1
+    2300004: Anchoring_01 2
+    2300006: Anchoring_01 3
+    2300008: chain_01
+    2300010: chain_01 1
+    2300012: chain_01 2
+    2300014: chain_01 3
+    2300016: chain_010
+    2300018: chain_010 1
+    2300020: chain_011
+    2300022: chain_012
+    2300024: chain_013
+    2300026: chain_02
+    2300028: chain_02 1
+    2300030: chain_02 2
+    2300032: chain_02 3
+    2300034: chain_03
+    2300036: chain_03 1
+    2300038: chain_03 2
+    2300040: chain_03 3
+    2300042: chain_04
+    2300044: chain_04 1
+    2300046: chain_04 2
+    2300048: chain_04 3
+    2300050: chain_05
+    2300052: chain_05 1
+    2300054: chain_05 2
+    2300056: chain_06
+    2300058: chain_06 1
+    2300060: chain_06 2
+    2300062: chain_07
+    2300064: chain_07 1
+    2300066: chain_07 2
+    2300068: chain_08
+    2300070: chain_08 1
+    2300072: chain_08 2
+    2300074: chain_08 3
+    2300076: chain_09
+    2300078: chain_09 1
+    2300080: Key1
+    2300082: Key1 1
+    2300084: Key1 2
+    2300086: Key1 3
+    3300000: Anchoring_01
+    3300002: Anchoring_01 1
+    3300004: Anchoring_01 2
+    3300006: Anchoring_01 3
+    3300008: chain_01
+    3300010: chain_01 1
+    3300012: chain_01 2
+    3300014: chain_01 3
+    3300016: chain_010
+    3300018: chain_010 1
+    3300020: chain_011
+    3300022: chain_012
+    3300024: chain_013
+    3300026: chain_02
+    3300028: chain_02 1
+    3300030: chain_02 2
+    3300032: chain_02 3
+    3300034: chain_03
+    3300036: chain_03 1
+    3300038: chain_03 2
+    3300040: chain_03 3
+    3300042: chain_04
+    3300044: chain_04 1
+    3300046: chain_04 2
+    3300048: chain_04 3
+    3300050: chain_05
+    3300052: chain_05 1
+    3300054: chain_05 2
+    3300056: chain_06
+    3300058: chain_06 1
+    3300060: chain_06 2
+    3300062: chain_07
+    3300064: chain_07 1
+    3300066: chain_07 2
+    3300068: chain_08
+    3300070: chain_08 1
+    3300072: chain_08 2
+    3300074: chain_08 3
+    3300076: chain_09
+    3300078: chain_09 1
+    3300080: Key1
+    3300082: Key1 1
+    3300084: Key1 2
+    3300086: Key1 3
+    4300000: Anchoring_01
+    4300002: chain_01
+    4300004: chain_02
+    4300006: chain_03
+    4300008: chain_04
+    4300010: chain_05
+    4300012: chain_06
+    4300014: chain_07
+    4300016: chain_08
+    4300018: Key1
+    4300020: Anchoring_01
+    4300022: chain_01
+    4300024: chain_02
+    4300026: chain_03
+    4300028: chain_04
+    4300030: chain_08
+    4300032: Key1
+    4300034: Anchoring_01
+    4300036: chain_01
+    4300038: chain_02
+    4300040: chain_03
+    4300042: chain_04
+    4300044: chain_05
+    4300046: chain_06
+    4300048: chain_07
+    4300050: chain_08
+    4300052: chain_09
+    4300054: chain_010
+    4300056: Key1
+    4300058: Anchoring_01
+    4300060: chain_01
+    4300062: chain_02
+    4300064: chain_03
+    4300066: chain_04
+    4300068: chain_05
+    4300070: chain_06
+    4300072: chain_07
+    4300074: chain_08
+    4300076: chain_09
+    4300078: chain_010
+    4300080: chain_011
+    4300082: chain_012
+    4300084: chain_013
+    4300086: Key1
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

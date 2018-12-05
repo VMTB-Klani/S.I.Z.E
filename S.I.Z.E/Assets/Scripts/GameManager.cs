@@ -4,38 +4,23 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-
-/// <summary>
-/// decides when the game is won or lost
-/// pauses the game when asked
-/// starts the game when ready
-/// and
-/// locks the cursor
-/// </summary>
 public class GameManager : MonoBehaviour
 {
     //public//
     public bool setNewText = false;
-    public float starttime;
+    public float startTime;
 
     //private//
-    private UIHandler r_uiHandler;
+    UIHandler r_uiHandler;
 
-    //variables for timer
-    float timeleft = 5;
-
-    //Player r_player;
+    ///variables for timer
+    float timeLeft = 5;
 
     [SerializeField] GameObject playerPrefab;
-    [SerializeField] Transform player_Spawnpoint;
-
+    [SerializeField] Transform playerSpawnpoint;
     [SerializeField] Camera sceneCamera;
 
-    Scene currentScene;
-
-    bool hasWon = false;
-
-    //lockstate of the cursor
+    ///lockstate of the cursor
     bool lockstate = false;
 
     public int m_CountKey = 0;
@@ -52,12 +37,12 @@ public class GameManager : MonoBehaviour
             ToggleCursorLock();
         }
 
-        playerPrefab = Instantiate(playerPrefab, player_Spawnpoint);
+        playerPrefab = Instantiate(playerPrefab, playerSpawnpoint);
     }
 
     void Update()
     {
-        if ((starttime + timeleft < Time.time))
+        if ((startTime + timeLeft < Time.time))
         {
             r_uiHandler.StoryText.text = "";
         }
