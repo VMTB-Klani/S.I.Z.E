@@ -35,7 +35,9 @@ public class SizeChanger : MonoBehaviour
     public void SmallSize()
     {
         r_characterController.speed = 2.1f;
-        r_characterController.jumpSpeed = 5.0f;
+        r_characterController.jumpSpeed = 4.0f;
+        r_characterController.gravity = 18f;
+        r_characterController.r_characterController.stepOffset = 0.1f;
         gameObject.transform.localScale = new Vector3(0.1f, 0.1f, 0.1f);
     }
 
@@ -43,6 +45,8 @@ public class SizeChanger : MonoBehaviour
     {
         r_characterController.speed = 5.1f;
         r_characterController.jumpSpeed = 7.0f;
+        r_characterController.gravity = 24f;
+        r_characterController.r_characterController.stepOffset = 0.48f;
         gameObject.transform.localScale = new Vector3(1, 1, 1);
     }
 }

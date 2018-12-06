@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4301561223612524}
   - component: {fileID: 33414037069602960}
   - component: {fileID: 23250194714044500}
+  - component: {fileID: 64833161673213260}
   m_Layer: 0
   m_Name: mousehole_curve
   m_TagString: Untagged
@@ -82,4 +83,18 @@ MeshFilter:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1820581873025884}
+  m_Mesh: {fileID: 4300000, guid: efcf74a2591a2e744bd6c49387df1d38, type: 3}
+--- !u!64 &64833161673213260
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1820581873025884}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: efcf74a2591a2e744bd6c49387df1d38, type: 3}
