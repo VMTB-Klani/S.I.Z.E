@@ -4,9 +4,22 @@ using UnityEngine;
 
 public class PauseManager : MonoBehaviour
 {
+    //private//
+    GameManager r_gameManager;
+
     bool isGamePaused = false;
 
     public GameObject m_UIPauseMenu;
+
+    private void Awake()
+    {
+        r_gameManager = FindObjectOfType<GameManager>();
+    }
+
+    private void Start()
+    {
+        m_UIPauseMenu.SetActive(false);
+    }
 
     void Update()
     {
@@ -14,6 +27,7 @@ public class PauseManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             ShowMenu();
+            r_gameManager.ToggleCursorLock();
         }
     }
 

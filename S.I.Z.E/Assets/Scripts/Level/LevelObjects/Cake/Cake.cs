@@ -12,11 +12,6 @@ public class Cake : InteractibleGameObj
 
     }
 
-    void Start()
-    {
-
-    }
-
     void Update()
     {
         if (r_SizeChanger == null)

@@ -4,17 +4,10 @@ using UnityEngine;
 
 public class Potion : InteractibleGameObj
 {
-    //public//
-
     //private//
     SizeChanger r_SizeChanger;
 
     private void Awake()
-    {
-
-    }
-
-    void Start()
     {
 
     }

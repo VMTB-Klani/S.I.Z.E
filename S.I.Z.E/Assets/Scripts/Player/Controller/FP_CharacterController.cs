@@ -8,14 +8,14 @@ public class FP_CharacterController : MonoBehaviour
     //public//
     [HideInInspector] public CharacterController r_characterController;
 
+    [HideInInspector] public float speed = 5.1f;
+
+    [HideInInspector] public float jumpSpeed = 7.0f;///height
+    [HideInInspector] public float gravity = 24.0f;///drag/pull to the ground
+
     //private//
-    float speed = 5.1f;
     float midAirMultiplier = 0.9f;
 	InteractibleGameObj inter;
-
-
-	float jumpSpeed = 7.0f;///height
-    float gravity = 24.0f;///drag/pull to the ground
 
     bool isJumping;
 
@@ -23,8 +23,9 @@ public class FP_CharacterController : MonoBehaviour
 
     ///raycast hit for interacting with objects
     RaycastHit hit;
+
     ///pickup range, for raycast
-    int pickupRange = 5;
+    int pickupRange = 2;
 
     ///references
     AudioHandler r_audioHandler;
@@ -57,7 +58,7 @@ public class FP_CharacterController : MonoBehaviour
     /// <returns></returns>
     IEnumerator PlayFootstepSound()
     {
-        if (r_characterController.velocity.magnitude >= 2f && !r_footstepSource.isPlaying)
+        if (r_characterController.velocity.magnitude >= 1f && !r_footstepSource.isPlaying)
         {
             AudioClip clip = r_audioHandler.GetRandomAudioClip();
             r_footstepSource.PlayOneShot(clip);
