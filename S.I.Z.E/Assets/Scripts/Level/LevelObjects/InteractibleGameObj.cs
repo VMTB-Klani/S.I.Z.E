@@ -5,13 +5,13 @@ using UnityEngine;
 public class InteractibleGameObj : MonoBehaviour
 {
     [SerializeField] string m_Description;
-
-    public void Start()
+	public bool m_LookAt;
+	public void Start()
     {
 
     }
 
-    public virtual string OnViewPoint()
+    public virtual string OnViewPointText()
     {
         return m_Description;
     }
@@ -20,4 +20,9 @@ public class InteractibleGameObj : MonoBehaviour
     {
 
     }
+
+	public virtual void  OnViewPoint()
+	{
+		
+	}
 }

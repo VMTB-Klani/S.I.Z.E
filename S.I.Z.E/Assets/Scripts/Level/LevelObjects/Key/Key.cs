@@ -17,8 +17,8 @@ public class Key : InteractibleGameObj
         Destroy(this.gameObject);
     }
 
-    public override string OnViewPoint()
+    public override string OnViewPointText()
     {
-        return base.OnViewPoint();
+        return base.OnViewPointText();
     }
 }

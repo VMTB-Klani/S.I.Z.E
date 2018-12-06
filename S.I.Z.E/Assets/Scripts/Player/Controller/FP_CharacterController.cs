@@ -11,8 +11,10 @@ public class FP_CharacterController : MonoBehaviour
     //private//
     float speed = 5.1f;
     float midAirMultiplier = 0.9f;
+	InteractibleGameObj inter;
 
-    float jumpSpeed = 7.0f;///height
+
+	float jumpSpeed = 7.0f;///height
     float gravity = 24.0f;///drag/pull to the ground
 
     bool isJumping;
@@ -134,11 +136,15 @@ public class FP_CharacterController : MonoBehaviour
         {
             if (hit.transform.gameObject.tag == "Interactible")
             {
-                InteractibleGameObj inter = hit.transform.gameObject.GetComponent(typeof(InteractibleGameObj)) as InteractibleGameObj;
+                inter = hit.transform.gameObject.GetComponent(typeof(InteractibleGameObj)) as InteractibleGameObj;
 
-                r_uiHandler.infoText.text = inter.OnViewPoint();
+                r_uiHandler.infoText.text = inter.OnViewPointText();
+				if (inter != null)
+					inter.m_LookAt = true;
+				if (inter != null)
+					inter.OnViewPoint();
 
-                if (Input.GetKey(KeyCode.E))
+				if (Input.GetKey(KeyCode.E))
                 {
                     if (inter != null)
                         inter.OnSelectedObject();
@@ -146,6 +152,8 @@ public class FP_CharacterController : MonoBehaviour
             }
             else
             {
+				if (inter != null)
+					inter.m_LookAt = false;
                 r_uiHandler.infoText.text = "";
             }
         }
