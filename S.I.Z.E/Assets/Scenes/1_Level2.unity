@@ -5632,7 +5632,8 @@ AudioSource:
   m_GameObject: {fileID: 654308561}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: ebabd147eb252bf4fa3c072adb98c267,
+    type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 0.25
@@ -5727,7 +5728,8 @@ AudioSource:
   m_GameObject: {fileID: 654308561}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: ebabd147eb252bf4fa3c072adb98c267,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: d9b8bb1751473da458b99fbd834d64cb, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.25
@@ -7692,6 +7694,7 @@ Transform:
   - {fileID: 1000358277}
   - {fileID: 1153242939}
   - {fileID: 920471389}
+  - {fileID: 1708932718}
   m_Father: {fileID: 1390031098}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -9292,7 +9295,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1178334635
 RectTransform:
   m_ObjectHideFlags: 0
@@ -13335,6 +13338,70 @@ Transform:
   m_Father: {fileID: 946074576}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!1001 &1708932717
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 946074576}
+    m_Modifications:
+    - target: {fileID: 4698074510060234, guid: c808609463d214b4e9c3b82e8e6cb6a5, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 1.674321
+      objectReference: {fileID: 0}
+    - target: {fileID: 4698074510060234, guid: c808609463d214b4e9c3b82e8e6cb6a5, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -1.6987514
+      objectReference: {fileID: 0}
+    - target: {fileID: 4698074510060234, guid: c808609463d214b4e9c3b82e8e6cb6a5, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -52.140457
+      objectReference: {fileID: 0}
+    - target: {fileID: 4698074510060234, guid: c808609463d214b4e9c3b82e8e6cb6a5, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4698074510060234, guid: c808609463d214b4e9c3b82e8e6cb6a5, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4698074510060234, guid: c808609463d214b4e9c3b82e8e6cb6a5, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4698074510060234, guid: c808609463d214b4e9c3b82e8e6cb6a5, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4698074510060234, guid: c808609463d214b4e9c3b82e8e6cb6a5, type: 2}
+      propertyPath: m_RootOrder
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 114991681247811844, guid: c808609463d214b4e9c3b82e8e6cb6a5,
+        type: 2}
+      propertyPath: m_LookAt
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4698074510060234, guid: c808609463d214b4e9c3b82e8e6cb6a5, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 99.9999
+      objectReference: {fileID: 0}
+    - target: {fileID: 4698074510060234, guid: c808609463d214b4e9c3b82e8e6cb6a5, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4698074510060234, guid: c808609463d214b4e9c3b82e8e6cb6a5, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 16.666656
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c808609463d214b4e9c3b82e8e6cb6a5, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!4 &1708932718 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4698074510060234, guid: c808609463d214b4e9c3b82e8e6cb6a5,
+    type: 2}
+  m_PrefabInternal: {fileID: 1708932717}
 --- !u!4 &1720897737 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4071974917617822, guid: 4ca6e5655e757ae49807fd4e51459793,

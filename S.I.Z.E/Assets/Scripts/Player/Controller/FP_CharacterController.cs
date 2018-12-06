@@ -15,7 +15,7 @@ public class FP_CharacterController : MonoBehaviour
 
     //private//
     float midAirMultiplier = 0.9f;
-	InteractibleGameObj inter;
+    InteractibleGameObj inter;
 
     bool isJumping;
 
@@ -25,7 +25,7 @@ public class FP_CharacterController : MonoBehaviour
     RaycastHit hit;
 
     ///pickup range, for raycast
-    int pickupRange = 2;
+    int pickupRange = 3;
 
     ///references
     AudioHandler r_audioHandler;
@@ -140,12 +140,12 @@ public class FP_CharacterController : MonoBehaviour
                 inter = hit.transform.gameObject.GetComponent(typeof(InteractibleGameObj)) as InteractibleGameObj;
 
                 r_uiHandler.infoText.text = inter.OnViewPointText();
-				if (inter != null)
-					inter.m_LookAt = true;
-				if (inter != null)
-					inter.OnViewPoint();
+                if (inter != null)
+                    inter.m_LookAt = true;
+                if (inter != null)
+                    inter.OnViewPoint();
 
-				if (Input.GetKey(KeyCode.E))
+                if (Input.GetKey(KeyCode.E))
                 {
                     if (inter != null)
                         inter.OnSelectedObject();
@@ -153,8 +153,8 @@ public class FP_CharacterController : MonoBehaviour
             }
             else
             {
-				if (inter != null)
-					inter.m_LookAt = false;
+                if (inter != null)
+                    inter.m_LookAt = false;
                 r_uiHandler.infoText.text = "";
             }
         }

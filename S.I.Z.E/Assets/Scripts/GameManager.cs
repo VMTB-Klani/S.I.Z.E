@@ -21,7 +21,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] Camera sceneCamera;
 
     ///lockstate of the cursor
-    bool lockstate = false;
+    bool lockstate;
 
     public int m_CountKey = 0;
 
@@ -32,10 +32,9 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-        if (Cursor.lockState != CursorLockMode.Locked)
-        {
-            ToggleCursorLock();
-        }
+        lockstate = true;
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
 
         playerPrefab = Instantiate(playerPrefab, playerSpawnpoint);
     }
