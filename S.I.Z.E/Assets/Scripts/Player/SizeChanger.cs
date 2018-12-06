@@ -22,17 +22,17 @@ public class SizeChanger : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.X))
-        {
-            SmallSize();
-        }
-        if (Input.GetKeyDown(KeyCode.V))
-        {
-            NormalSize();
-        }
-    }
+		//if (Input.GetKeyDown(KeyCode.X))
+		//{
+		//	SmallSize();
+		//}
+		//if (Input.GetKeyDown(KeyCode.V))
+		//{
+		//	NormalSize();
+		//}
+	}
 
-    public void SmallSize()
+	public void SmallSize()
     {
         r_characterController.speed = 2.1f;
         r_characterController.jumpSpeed = 4.0f;
