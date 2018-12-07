@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Potion : InteractibleGameObj
 {
+    //public//
+    public AudioSource source;
+
     //private//
     SizeChanger r_SizeChanger;
 
@@ -23,6 +26,7 @@ public class Potion : InteractibleGameObj
     private void OnDisable()
     {
         r_SizeChanger.NormalSize();
+        source.Play();
     }
 
     public override void OnSelectedObject()

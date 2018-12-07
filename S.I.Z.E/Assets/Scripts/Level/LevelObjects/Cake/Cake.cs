@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class Cake : InteractibleGameObj
 {
-    //private//
-    SizeChanger r_SizeChanger;
-
     //public//
     public AudioSource source;
+
+    //private//
+    SizeChanger r_SizeChanger;
 
     private void Awake()
     {
@@ -27,7 +27,6 @@ public class Cake : InteractibleGameObj
     {
         r_SizeChanger.SmallSize();
         source.Play();
-
     }
 
     public override void OnSelectedObject()

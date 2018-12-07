@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 23485714008554586}
   m_Layer: 0
   m_Name: glass
-  m_TagString: Untagged
+  m_TagString: Interactible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -36,9 +36,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4387657386479154}
+  - component: {fileID: 65517052328441272}
+  - component: {fileID: 114529719529904918}
   m_Layer: 0
   m_Name: Potion
-  m_TagString: Untagged
+  m_TagString: Interactible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -83,8 +85,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1544533152743278}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.0260148, y: 0.000021550804, z: 12.274566}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -12.497, y: 0.000042978674, z: 17.941}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
   - {fileID: 4584898980600048}
@@ -217,7 +219,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 2a6f24190bf354945abd1e88dcfec06c, type: 2}
+  - {fileID: 2100000, guid: f3c6802ba759e824faadf92a9258c263, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -258,3 +260,29 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1773716722892342}
   m_Mesh: {fileID: 4300004, guid: 55f4539d1eea17c4b9090ea67c6c7118, type: 3}
+--- !u!65 &65517052328441272
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1544533152743278}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.05, y: 0.075, z: 0.04}
+  m_Center: {x: 0, y: 0.0376, z: 0}
+--- !u!114 &114529719529904918
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1544533152743278}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17db0a9d23d138c46bcb01c53c1d0dd7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Description: Press E to drink the potion
+  m_LookAt: 0
+  source: {fileID: 0}
