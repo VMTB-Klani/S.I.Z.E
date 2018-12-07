@@ -44,8 +44,14 @@ public class FP_CharacterController : MonoBehaviour
 
     void Update()
     {
+        //moveDirection = new Vector3(Input.GetAxisRaw("Horizontal"), 0.0f, Input.GetAxisRaw("Vertical"));
         DoMovement();
         InteractWithObjects();
+    }
+
+    private void FixedUpdate()
+    {
+
     }
 
     /// <summary>

@@ -10,6 +10,7 @@ public class PauseManager : MonoBehaviour
     bool isGamePaused = false;
 
     public GameObject m_UIPauseMenu;
+    public GameObject crosshair;
 
     private void Awake()
     {
@@ -39,6 +40,7 @@ public class PauseManager : MonoBehaviour
         isGamePaused = false;
 
         m_UIPauseMenu.SetActive(false);
+        crosshair.SetActive(true);
 
         Time.timeScale = 1;
     }
@@ -51,6 +53,7 @@ public class PauseManager : MonoBehaviour
         isGamePaused = true;
 
         m_UIPauseMenu.SetActive(true);
+        crosshair.SetActive(false);
 
         Time.timeScale = 0;
     }

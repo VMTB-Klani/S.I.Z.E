@@ -7,6 +7,9 @@ public class Cake : InteractibleGameObj
     //private//
     SizeChanger r_SizeChanger;
 
+    //public//
+    public AudioSource source;
+
     private void Awake()
     {
 
@@ -23,6 +26,8 @@ public class Cake : InteractibleGameObj
     private void OnDisable()
     {
         r_SizeChanger.SmallSize();
+        source.Play();
+
     }
 
     public override void OnSelectedObject()
